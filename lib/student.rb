@@ -39,7 +39,7 @@ class Student
      DB[:conn].execute(sql, self.name, self.grade)
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM songs")[0][0]
       
-      #
+      #grab the ID of the last inserted row, i.e. the row you just inserted into the database, and assign it to the be the value of the @id attribute of the given instance.
   end
   
   def self.create(name:, grade:) #<--keyword arg
