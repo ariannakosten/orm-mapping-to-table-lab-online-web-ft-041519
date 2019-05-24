@@ -5,6 +5,6 @@ class Student
   def initialize
     @name = name
     @grade = grade
-    
+    id =id
   
 end
