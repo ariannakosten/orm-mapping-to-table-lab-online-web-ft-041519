@@ -32,6 +32,7 @@ class Student
   
   def save
     sql = <<-SQL
+    
   end
   
   def self.create(name:, grade:) #<--keyword arg
