@@ -34,7 +34,7 @@ class Student
     sql = <<-SQL
   end
   
-  def self.create
+  def self.create(name:, grade:) #<--keyword arg
     student = Student.new(name, grade)
     student.save
     student
